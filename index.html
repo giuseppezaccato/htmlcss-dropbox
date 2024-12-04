@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- link libreria css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- link reset -->
     <link rel="stylesheet" href="/css/reset.css">
     <!-- link debug -->
@@ -15,6 +20,110 @@
 </head>
 
 <body>
+    <header>
+        <!-- ricorda position sticky top 0 -->
+        <div class="banner">
+            <div class="leftnav">
+
+            </div>
+            <div class="rightnav">
+
+            </div>
+        </div>
+
+        <!-- position relative + sfondo-->
+        <div class="hero">
+
+            <!-- width% margin 0auto sfondo azzurro -->
+            <div class="container70">
+
+                <!-- eventualmente flexa in direction column con gap -->
+                <h1>TITOLO</h1>
+
+                <p></p>
+                <button></button>
+                <p></p>
+
+                <!-- icona a href con link #id a h3 first child di main -->
+                <a href="#anchor"><i></i></a>
+
+                <!-- img a destra con absolute bot negativo + right 0 -->
+                <figure></figure>
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- contenitore width60% -->
+        <div class="container60">
+
+            <h3 id="anchor">TITOLO PRINCIPALE MAIN </h3>
+
+            <!-- occhio style radio in css -->
+            <div class="radiocontainer">
+            </div>
+
+            <!-- occhio a :lastchild flex direction + gap
+            e controlla la flex direction eventualmente DENTRO ogni tab -->
+            <div class="tabcontainer">
+
+            </div>
+
+            <div class="midimg">
+                <figure>
+
+                </figure>
+
+                <aside>
+
+                </aside>
+            </div>
+
+            <h3>SEMPRE TITOLO PRINCIPALE MAIN</h3>
+
+            <!-- crea card replicabili, poi flex + wrap
+             (basis singolarmente a .card con calc -gap, img width100%) -->
+            <div class="cardcontainer">
+
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <h3>DI NUOVO MAIN TITLE</h3>
+            <P><a href=""></a></P>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <!-- stesso di header eventualmente flexa con basis sui singoli tutti = -->
+        <div class="container70">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+
+        <!-- elemento finale hr + flexelement
+        oppure icona p icona flexati align items(verticale)
+        con bordertop -->
+        <div class="languageselector">
+            <i></i>
+            <p>Italiano</p>
+            <i></i>
+        </div>
+
+    </footer>
+
 
 </body>
 
