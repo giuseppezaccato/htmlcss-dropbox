@@ -9,6 +9,29 @@ img {
     display: block;
 }
 
-a {
-    text-decoration: none;
+ul {
+    list-style: none;
+}
+
+.tabcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab {
+    flex-basis: calc(100% / 3 - 20px);
+    border: 1px solid #000000;
+    padding: 10px;
+
+}
+
+.tabcontainer .tab:last-child {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.headertab {
+    text-align: center;
+    border-bottom: 1px solid #000000;
 }
