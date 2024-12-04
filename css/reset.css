@@ -5,9 +5,13 @@
 
 }
 
+/* controlla se poterlo tenere 
+nel reset.css o meno*/
 img {
     display: block;
+    width: 100%;
 }
+
 
 ul {
     list-style: none;
