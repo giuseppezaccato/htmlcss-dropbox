@@ -127,37 +127,50 @@ h2 {
     flex-basis: calc(100% / 3 - 20px);
     display: flex;
     flex-direction: column;
-    border: 1px solid #000000;
-    gap: 2rem;
-    max-height: none;
+    border: 1px solid #EDECEE;
+    gap: 1rem;
+
+    /* max-height: none; 
+    non è necessario perchè lo è di default */
 }
 
+.tabrow hr {
+    margin-top: 2rem;
+}
+
+
 .tab .tabrow:first-child {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #EDECEE;
     text-align: center;
     padding-block: 10px;
 }
 
-.tabcontainer .tab:last-child {
-    flex-direction: row-reverse;
-    justify-content: space-between;
+.tabrow:not(:first-child) {
+    padding: 10px 20px;
+}
+
+.tabrow .btn {
+    max-width: 80%;
+    /* justify-self: center; */
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.last {
+    flex-direction: column;
     flex-grow: 1;
 }
 
-/* .headertab {
-    text-align: center;
-    border-bottom: 1px solid #000000;
-    padding-block: 10px;
-} */
-
-
-.tabrow:not(:first-child) {
-    /* line-height: 160%; */
-    padding: 20px;
-
+.last .tabrow .btn {
+    position: absolute;
+    right: 20px;
+    ;
 }
 
-
+.last .tabrow:nth-child(2) {
+    position: relative;
+    line-height: 200%;
+}
 
 li {
     margin-block: 1rem;
