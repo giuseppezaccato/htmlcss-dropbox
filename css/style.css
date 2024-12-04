@@ -1,0 +1,97 @@
+* {
+    font-family: sans-serif;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 1%;
+    row-gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.btn {
+    background-color: #0061FE;
+    color: white;
+    padding: 10px;
+    max-width: fit-content;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(80, 185, 255);
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero {
+    background-color: #B4D0E6;
+}
+
+.container65 {
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    padding-block: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    bottom: -50px;
+}
+
+.flex-container .aside {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.flex-container figure {
+    flex-basis: 70%;
+    position: relative;
+    right: -50px;
+}
+
+/* controlla se poterlo dare 
+nel reset o meno poi */
+img {
+    width: 100%;
+}
+
+/* bonus */
+#darrow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 50px;
+}
+
+.container55 {
+    width: 55%;
+    margin: 0 auto;
+}
+
+hr {
+    margin-top: 6rem;
+
+
+}
+
+h2 {
+    font-size: 2rem;
+    padding-block: 2rem;
+}

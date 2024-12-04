@@ -23,52 +23,88 @@
     <header>
         <!-- ricorda position sticky top 0 -->
         <div class="banner">
-            <div class="leftnav">
+
+            <div class="nav">
+                <figure>
+                    <img src="/img/logo-small.png" alt="">
+                </figure>
+                <a href="#">Perchè Dropbox</a>
+                <a href="#">Funzioni</a>
+                <a href="#">Piani e prezzi</a>
 
             </div>
-            <div class="rightnav">
+
+            <div class="nav">
+                <a href="#">Supporto</a>
+                <a href="#">Contatta l'ufficio vendite</a>
+                <a href="#">Accedi</a>
+                <div class="btn">Inizia</div>
+
 
             </div>
         </div>
 
-        <!-- position relative + sfondo-->
+        <!--sfondo-->
         <div class="hero">
 
             <!-- width% margin 0auto sfondo azzurro -->
-            <div class="container70">
+            <div class="container65">
 
                 <!-- eventualmente flexa in direction column con gap -->
-                <h1>TITOLO</h1>
+                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
 
-                <p></p>
-                <button></button>
-                <p></p>
+                <!-- flexato qui e abbassato con relative bottom negativo -->
+                <div class="flex-container">
+                    <div class="aside ">
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e
+                            collaboratori sono accessibili dallo stesso posto.
+                            Dropbox Business è più di uno spazio di
+                            archiviazione sicuro: è un modo intelligente e
+                            integrato per ottimizzare il flusso di lavoro
+                            esistente.
+                        </p>
+                        <div class="btn">Inizia la tua prova gratuita</div>
+                        <p>Annulla in qualsiasi momento</p>
+                    </div>
 
-                <!-- icona a href con link #id a h3 first child di main -->
-                <a href="#anchor"><i></i></a>
+                    <figure>
+                        <img src="/img/jumbo.png" alt="">
+                    </figure>
+                </div>
 
-                <!-- img a destra con absolute bot negativo + right 0 -->
-                <figure></figure>
-
-
+                <!-- icona a href con link #id a h2 first child di main
+                 controlla come linkare un anchor usando a con href -->
+                <a id="darrow" href="#anchor">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
             </div>
         </div>
-
     </header>
 
     <main>
+        <hr>
         <!-- contenitore width60% -->
-        <div class="container60">
+        <div class="container55">
 
-            <h3 id="anchor">TITOLO PRINCIPALE MAIN </h3>
+            <h2 id="anchor">Trova il piano business che fa per te </h2>
 
             <!-- occhio style radio in css -->
             <div class="radiocontainer">
+                <input type="radio" name="fattura" value="Fatturazione mensile" checked>
+                <label for="Fatturazione mensile">Fatturazione mensile</label>
+                <input type="radio" name="fattura" value="Fatturazione annuale">
+                <label for="Fatturazione annuale">Fatturazione annuale</label>
             </div>
 
             <!-- occhio a :lastchild flex direction + gap
             e controlla la flex direction eventualmente DENTRO ogni tab -->
             <div class="tabcontainer">
+
+                <div class="tab">
+
+                </div>
+
+
 
             </div>
 
