@@ -14,10 +14,46 @@
     z-index: 1;
 }
 
+/* esperimento box shadow */
+/* .shadow::after {
+    content:"box-shadow: 0px 12px 2px 100px rgb(0, 97, 254);" ;
+    border: 30px solid #0061FE;
+    display: none;
+}
+
+.banner>nav>.shadow:hover {
+    box-shadow: 0px 12px 2px 100px rgb(0, 97, 254);
+} */
+
+/* .box {
+    transition: box-shadow .3s;
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+} */
+
+/* .box:hover .box::after {
+    box-shadow: 0px 15px 1px 16px rgba(0, 0, 255, .2);
+} */
+
+/* tentativo bonus con shadow */
+
+.box:hover {
+    transform: scale(1.00) perspective(5px);
+    border-radius: 20px;
+    box-shadow: 1px 3rem 1px rgb(25, 0, 255);
+    transition: transform .1s, box-shadow 1s;
+}
+
+
 .btn {
     background-color: #0061FE;
     color: white;
-    padding: 10px;
+    padding: 15px;
     max-width: fit-content;
 }
 
@@ -109,14 +145,15 @@ h2 {
     width: 30%;
 }
 
-.fa-check {
+.fa-check,
+.fa-arrow-down {
     color: #0061FE;
 }
 
 .tabcontainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.5rem;
 }
 
 .tab {
@@ -146,7 +183,7 @@ h2 {
 }
 
 .tabrow .btn {
-    max-width: 80%;
+    max-width: 90%;
     /* justify-self: center; */
     margin: 0 auto 2rem;
     text-align: center;
@@ -159,7 +196,7 @@ h2 {
 
 .last .tabrow .btn {
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: -5px;
 }
 
@@ -209,4 +246,14 @@ h3 {
 
 .card {
     flex-basis: calc(95% / 3);
+    line-height: 160%;
+}
+
+.more {
+    text-align: left;
+    padding-block: 3rem;
+}
+
+.more>a {
+    padding: 3rem;
 }
