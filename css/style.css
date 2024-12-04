@@ -86,8 +86,8 @@ img {
     font-size: 50px;
 }
 
-.container55 {
-    width: 55%;
+.container50 {
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -105,8 +105,6 @@ h2 {
     padding-block: 3rem;
 }
 
-
-
 .tabcontainer {
     display: flex;
 }
@@ -117,4 +115,50 @@ h2 {
 
 .fa-check {
     color: #0061FE;
+}
+
+.tabcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tab {
+    flex-basis: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    gap: 2rem;
+    max-height: none;
+}
+
+.tab .tabrow:first-child {
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.tabcontainer .tab:last-child {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* .headertab {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    padding-block: 10px;
+} */
+
+
+.tabrow:not(:first-child) {
+    /* line-height: 160%; */
+    padding: 20px;
+
+}
+
+
+
+li {
+    margin-block: 1rem;
 }
