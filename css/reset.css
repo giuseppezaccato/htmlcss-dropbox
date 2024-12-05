@@ -16,8 +16,3 @@ img {
 ul {
     list-style: none;
 }
-
-li {
-    padding-left: 10px;
-    list-style-position: outside;
-}

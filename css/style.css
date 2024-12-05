@@ -7,7 +7,7 @@
     background-color: rgba(255, 255, 255, 0.822);
     display: flex;
     justify-content: space-between;
-    padding: 20px 1%;
+    padding: 15px;
     row-gap: 30px;
     position: sticky;
     top: 0;
@@ -15,19 +15,23 @@
 }
 
 
-/* tentativo bonus con shadow */
+/* tentativo bonus con shadow 
+ col selettore avanzato meglio senza 
+creare la classe box aggiuntiva .banner .nav>a */
+
 .box:hover {
-    transform: scale(1.00) perspective(5px);
+    transform: scale(1.00) perspective(-5px);
     border-radius: 20px;
-    box-shadow: 1px 3rem 1px rgb(25, 0, 255);
+    box-shadow: 1px 3rem 20px rgb(25, 0, 255);
     transition: transform .1s, box-shadow 1s;
+
 }
 
 
 .btn {
     background-color: #0061FE;
     color: white;
-    padding: 15px;
+    padding: 10px 15px;
     max-width: fit-content;
 }
 
@@ -73,7 +77,7 @@ h1 {
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
 }
 
 .flex-container figure {
@@ -137,13 +141,17 @@ h2 {
     flex-direction: column;
     border: 1px solid #EDECEE;
     gap: 1rem;
-
     /* max-height: none; 
     non è necessario perchè lo è di default */
 }
 
 .tabrow hr {
     margin-top: 2rem;
+}
+
+.tabrow>ul>li {
+    text-indent: -10px;
+    margin-left: 1rem;
 }
 
 
