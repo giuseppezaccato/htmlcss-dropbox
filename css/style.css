@@ -165,7 +165,6 @@ h2 {
     margin-block: .7rem;
 }
 
-
 .tab .tabrow:first-child {
     border-bottom: 1px solid #EDECEE;
     text-align: center;
@@ -188,11 +187,12 @@ h2 {
 .last {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
 }
 
 .last div:first-child {
     flex-basis: 30%;
+    align-self: flex-start;
+    justify-self: end;
 }
 
 .tab:last-child {
@@ -233,11 +233,47 @@ h3 {
     line-height: 160%;
 }
 
-.more {
-    text-align: left;
-    padding-block: 3rem;
+.more>h2 {
+    line-height: 120%;
+    margin-block: 1em;
 }
 
-.more>a {
-    padding: 3rem;
+.more {
+    margin-block: 10em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.colcontainer {
+    display: flex;
+    gap: 1em;
+    padding-block: 3em;
+
+}
+
+.column {
+    flex-basis: calc(100%/5 - 1em);
+}
+
+.column>h4 {
+    margin-block: 2em;
+}
+
+.column>p {
+    line-height: 200%;
+}
+
+
+.container65>hr {
+    max-width: 10%;
+    border: 1px solid white;
+}
+
+.languageselector {
+    display: flex;
+    gap: 3px;
+    padding-block: 2.5em;
 }
