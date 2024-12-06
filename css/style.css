@@ -200,6 +200,10 @@ h2 {
     margin-bottom: 5em;
 }
 
+.last>div>p {
+    padding-top: 2em;
+}
+
 .midcontainer {
     margin-block: 3em;
     display: flex;
@@ -256,6 +260,7 @@ footer {
 
 .column {
     flex-basis: calc(100%/5 - 1em);
+    flex-grow: 1;
 }
 
 .column>h4 {
